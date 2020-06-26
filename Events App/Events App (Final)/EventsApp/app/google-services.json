@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "665200713462",
+    "firebase_url": "https://graphite-buffer-258607.firebaseio.com",
+    "project_id": "graphite-buffer-258607",
+    "storage_bucket": "graphite-buffer-258607.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665200713462:android:03b3521e7381128666d6d7",
+        "android_client_info": {
+          "package_name": "com.example.eventsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665200713462-fq6sj0vomgrrf0dipejjvja2t52knjf6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eventsapp",
+            "certificate_hash": "7a5b09168b8011fb9a907743795622ba1bcddacc"
+          }
+        },
+        {
+          "client_id": "665200713462-4kn95lqne8nghbngi9hido1708gtl4l7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eventsapp",
+            "certificate_hash": "ac2e19a631507d8976fd246ea4eb99697ff65953"
+          }
+        },
+        {
+          "client_id": "665200713462-k60j8rvl0ueoa5mnubvc1m9k13qlik9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj96Kz761RgU9XixZO8G_DVqgzdTJUjB0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "665200713462-k60j8rvl0ueoa5mnubvc1m9k13qlik9a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

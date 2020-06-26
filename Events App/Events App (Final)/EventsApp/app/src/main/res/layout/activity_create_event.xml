@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateEvent"
+    >
+
+    <Button
+        android:id="@+id/event_creation_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="67dp"
+        android:gravity="center_horizontal"
+        android:text="Create Event"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Tags_text"
+        app:layout_constraintTop_toBottomOf="@+id/Tags_box" />
+
+    <EditText
+        android:id="@+id/EventName_text"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="70dp"
+        android:hint="Event name"
+        app:layout_constraintBottom_toTopOf="@+id/Location_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EnterEvent_box"
+        app:layout_constraintTop_toBottomOf="@+id/Event_info_header" />
+
+    <TextView
+        android:id="@+id/EnterEvent_box"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="22dp"
+        android:text="Event Name"
+        app:layout_constraintBottom_toBottomOf="@+id/EventName_text"
+        app:layout_constraintEnd_toStartOf="@+id/EventName_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/EventName_text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Location_box"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="58dp"
+        android:text="Location"
+        app:layout_constraintBottom_toTopOf="@+id/time_box"
+        app:layout_constraintEnd_toStartOf="@+id/location_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EventName_text" />
+
+    <EditText
+        android:id="@+id/location_text"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="70dp"
+        android:hint="Location"
+        app:layout_constraintBottom_toBottomOf="@+id/time_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Location_box"
+        app:layout_constraintTop_toBottomOf="@+id/EventName_text"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/time_box"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="47dp"
+        android:text="Time"
+        app:layout_constraintBottom_toTopOf="@+id/details_text"
+        app:layout_constraintEnd_toStartOf="@+id/time_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Location_box" />
+
+    <EditText
+        android:id="@+id/time_text"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="92dp"
+        android:hint="Time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/time_box"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/details_box"
+        android:layout_width="104dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="181dp"
+        android:text="Details"
+        app:layout_constraintBottom_toBottomOf="@+id/event_creation_button"
+        app:layout_constraintEnd_toStartOf="@+id/details_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/location_text"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <EditText
+        android:id="@+id/details_text"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="41dp"
+        android:hint="Details"
+        app:layout_constraintBottom_toTopOf="@+id/Tags_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/details_box"
+        app:layout_constraintTop_toBottomOf="@+id/time_box" />
+
+    <TextView
+        android:id="@+id/Event_info_header"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="80dp"
+        android:text="Event Information"
+        app:layout_constraintBottom_toTopOf="@+id/EventName_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Tags_box"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="58dp"
+        android:text="Tags"
+        app:layout_constraintBottom_toTopOf="@+id/event_creation_button"
+        app:layout_constraintEnd_toStartOf="@+id/Tags_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_text" />
+
+    <EditText
+        android:id="@+id/Tags_text"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="101dp"
+        android:hint="Tags"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Tags_box"
+        app:layout_constraintTop_toBottomOf="@+id/details_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>
