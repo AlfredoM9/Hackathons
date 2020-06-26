@@ -1,1 +1,3 @@
 # Description:
+
+Programmed a mobile app in Java for users to register events that could be intended for students, student organizations, professionals, etc. This would be visually displayed to the people you are connected with. In addition, Firebase was used to make a user login using their credentials using Firebase’s Authentication and to store the information of the events. This data was stored in the Realtime database of Firebase and could be retrieved at any time. 
